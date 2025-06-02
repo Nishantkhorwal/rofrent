@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('reminder:invoice')->daily();
-        $schedule->command('generate:invoice')->daily();
+        $schedule->command('generate:invoice')->everyMinute();
     }
 
     /**
