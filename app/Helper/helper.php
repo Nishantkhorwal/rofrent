@@ -220,10 +220,10 @@ function getSettingImage($option_key)
                 return asset('storage/' . $destinationPath);
             }
         } else {
-            return asset('assets/images/users/empty-user.jpg');
+            return asset('assets/images/users/empty-user.png');
         }
     } catch (\Exception $e) {
-        return asset('assets/images/users/empty-user.jpg');
+        return asset('assets/images/users/empty-user.png');
     }
 }
 
